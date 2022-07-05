@@ -11,6 +11,8 @@ This fork removes all python GUI components. All conversion is done via the CLI.
 The file ~convert.py~ is script which will await an input, then convert any
 contained LaTeX into unicode.
 
+Use python3.
+
 Also, the unicode fractions now use ~\frac{num}{den}~. Though these are still
 unicode vulgar fractions and therefore limited (could replace with
 superscript/subscript later, though this is not the same).
