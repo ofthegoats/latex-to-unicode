@@ -1,0 +1,31 @@
+#+title: latex-to-unicode
+
+This repository is a fork of https://github.com/ypsu/latex-to-unicode.
+
+As the original repository, this fork is public domain.
+
+* Changes
+
+This fork removes all python GUI components. All conversion is done via the CLI.
+
+The file ~convert.py~ is script which will await an input, then convert any
+contained LaTeX into unicode.
+
+Also, the unicode fractions now use ~\frac{num}{den}~. Though these are still
+unicode vulgar fractions and therefore limited (could replace with
+superscript/subscript later, though this is not the same).
+
+* Usage
+
+The script is entirely through CLI, meaning you can add any interface you want.
+
+Example usage through CLI:
+
+#+begin_src bash
+$ echo "\\\alpha" | ./convert.py
+α
+#+end_src
+
+Note that three backslashes were necessary.
+
+[TODO] add a script that uses rofi as an interface

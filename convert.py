@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import re
 
 def convert(s):
@@ -126,3 +128,8 @@ textcal = {}
 textfrak = {}
 textmono = {}
 latex_symbols = []
+
+if __name__ == '__main__':
+    user_input = input()
+    uni_output = convert(user_input)
+    print(uni_output)
