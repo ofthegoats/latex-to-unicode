@@ -30,4 +30,4 @@ $ echo "\\\alpha" | ./convert.py
 
 Note that three backslashes were necessary.
 
-[TODO] add a script that uses rofi as an interface
+There is also an attached script which uses [[https://github.com/davatorium/rofi][rofi]] (equally, dmenu should work)
