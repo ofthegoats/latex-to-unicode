@@ -146,4 +146,4 @@ latex_symbols = []
 if __name__ == "__main__":
     user_input = input()
     uni_output = convert(user_input)
-    print(uni_output)
+    print(uni_output, end=" ")

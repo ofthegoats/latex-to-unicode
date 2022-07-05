@@ -4,4 +4,4 @@ set -e
 cd "$(dirname $(echo "$0"))"
 latex=$(rofi -dmenu)
 unicode=$(echo "$latex" | ./convert.py)
-echo "$unicode" | xclip
+echo -n "$unicode" | xclip
